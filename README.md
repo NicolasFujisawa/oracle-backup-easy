@@ -1,2 +1,2 @@
-# oracle-backup-offline
+# oracle-backup-easy
 Scripts para salvar e restaurar seus dados facilmente com Banco de dados Oracle-xe-11g em docker
