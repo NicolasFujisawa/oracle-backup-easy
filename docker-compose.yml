@@ -1,0 +1,17 @@
+version: '3.8'
+
+services: 
+  db:
+    image: epiclabs/docker-oracle-xe-11g
+    container_name: oracle_xe
+    ports: 
+      - 1521:1521
+    environment: 
+      - ORACLE_ALLOW_REMOTE=true
+      - ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+      - ORACLE_SID=XE
+    volumes: 
+      - oracle_xe_vol:/u01/app/oracle
+
+volumes: 
+  oracle_xe_vol:
